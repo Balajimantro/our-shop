@@ -1,0 +1,74 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+#navbar{
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	padding: .5rem 3rem;
+	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.5);
+	background: black;
+
+}
+
+ul li{
+	padding: 0px 10px;
+}
+
+nav .navbar-brand{
+	font-size: 25px;
+	font-weight: bolder;
+	color: #1fe200;
+}
+
+#navbarSupportedContent a{
+	color: white;
+}
+
+ul .dropdown-menu a{
+	color: black !important;
+}
+ section{
+ 	width: 100%;
+ 	min-height: 100vh;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+
+ }
+
+ #home{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url('home1.webp');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	flex-direction: column;
+	
+
+}
+
+section h1{
+	color: white;
+	font-weight: 800;
+	font-size: 100px;
+	letter-spacing: 5px;
+}
+
+#home p{
+	color: white;
+	font-size: 20px;
+}
+
+#home .input-group{
+	width: 40%;
+	height: 45px;
+}

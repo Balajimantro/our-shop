@@ -1,0 +1,167 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online techy form</title>
+		
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+		
+
+
+<body>
+
+<!-------------------------------	
+	<nav class="menu">
+		<span>ONLINE-TECHY</span>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">
+				About
+			</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Privacy</a></li>
+		</ul> 
+	
+
+	<div class="hamburger">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+		
+
+
+	</div>
+
+	</nav>		-------------------->
+<!------------------------------
+	<div class="para">
+		<h1>Part Time Jobs &<br> <span>Online Jobs</span> <br>For Collage Students</h1>
+		<p class="para1">Now you can live a lifestyle of using your mobile phone or computer to make money,<br> earn a full-time income, or earn extra income.</p>
+		<button class="join"> <a href="Register.html">Join Us</a> </button>
+
+
+	</div>  -------->
+
+	<!---------------------------Login form ------------------------------->
+
+	<div class="login-box">
+		<img src="user.png" class="uses">
+		<h2 class="login">login Here</h2><br>
+		<form name="myform1" id="form" action="dt.php" method="POST">
+
+			<div class="form-control1">
+			   <label>Email</label>
+			      <i class="fa-sharp fa-solid fa-envelope"></i>
+			   <input class="box-enter1" type="email" name="mail" placeholder="Enter email id" id="email" required>
+				<p>error message</p>
+			</div>   
+			
+			 <div class="form-control1">
+			   <label>Password</label>
+			   <i class="fa-solid fa-lock"></i>
+			   <input class="box-enter1" type="password" name="Pass" placeholder="Enter Password" id="pass" required>
+			   <p>error message</p>
+			
+			  
+			</div>
+			
+			
+			<div class="checkbox">
+				<div class="checkbox-content">
+					<input type="checkbox" name="logcheck">
+					<div class="remember">Remember me </div>
+				</div>
+				<a href="#" class="text">Forget password ?</a>
+			</div>
+
+			
+			
+			
+			<button class="button"> Submit</button>
+			
+			<br><br>
+			<div class="dont">Don't Have Account </div>
+			<a href="register.html" class="regbtn">Register Here</a>
+
+			
+
+		</form>
+
+	</div>
+	 	<footer class="foot"> copyright &#169; My website OURSHOP</footer>
+
+
+
+
+<br>
+
+
+<br><br>
+  
+
+  <!-------------------------- js 
+<script>
+	const form = document.getElementById('form');
+	const emailInput = document.getElementById('email');
+	const passInput = document.getElementById('pass');
+	
+
+	form.addEventListener('submit', e=>{
+		e.preventDefault();
+
+		if(emailInput.value ===''){
+			setError(emailInput, '*Please input Email ID ');
+		}else{
+			setSuccess(emailInput, 'valid');
+		}
+
+		if(passInput.value ===''){
+			setError(passInput, '*Please enter password');
+		}else{
+			setSuccess(passInput, 'valid');
+		}	
+
+	});
+
+
+function setError(element, errorMessage){
+	const parent = element.parentElement;
+	if(parent.classList.contains('success')){
+		parent.classList.remove('success');
+	}
+	parent.classList.add('error');
+	const paragraph = parent.querySelector('p');
+	paragraph.innerHTML = errorMessage;
+}
+
+function setSuccess(element, errorMessage){
+	const parent = element.parentElement;
+	if(parent.classList.contains('error')){
+		parent.classList.remove('error');
+	}
+	parent.classList.add('success');
+	const paragraph = parent.querySelector('p');
+	paragraph.innerHTML = errorMessage;
+}
+
+//-------------------------------------------------------slide----------------//
+
+const hamburger = document.querySelector('.hamburger');
+const navbar = document.querySelector('ul');
+
+
+hamburger.addEventListener('click',()=> {
+	navbar.classList.toggle('slide');
+
+})
+
+</script>
+
+</body>
+</html>
+

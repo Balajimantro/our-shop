@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>online techy form</title>
+		
+	<link rel="stylesheet" type="text/css" href="Register.css">
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+
+<body>
+
+
+
+		<!---------------------------------register form-------------------------------------->
+	
+	<div class="box">
+		<div class="center">
+	    	<img src="user.png" class="uses">
+			<h2 class="login">Register Here</h2><br>
+
+		    <form name="regform" id = "form" action="connect.php" method="POST">
+
+			    <div class="form-control">
+			        <label>Username</label>
+			        <i class="fas fa-user"></i>
+			        <input class="box-enter" type="text" name="uname" minlength="6" placeholder="Enter Username" id="username" required>
+			        <i class="fas fa-circle-check"></i>
+			        <i class="fas fa-circle-exclamation"></i>
+			        <p></p>			        
+			    </div>
+			    <div class="form-control">
+			        <label>Email id</label>
+			        <i class="fas fa-envelope"></i>
+			        <input class="box-enter" type="email" name ="email" placeholder="Enter email id" id="email" required >
+			     	<i class="fas fa-circle-check"></i>
+			     	<i class="fas fa-circle-exclamation"></i>
+				   <p></p>
+			    </div>
+			    <div class="form-control">
+			        <label>Password</label>
+			        <i class="fas fa-lock"></i>
+			        <input class="box-enter" type="Password" name="password" minlength="8" placeholder="Enter Password" id="password" required>
+			        <i class="fas fa-circle-check"></i>
+			        <i class="fas fa-circle-exclamation"></i>
+			         <p></p>
+			    </div>
+
+			    <div class="form-control">
+			        <label>Confirm password</label>
+			        <i class="fas fa-solid fa-lock"></i>
+			        <input class="box-enter" type="Password" name="cpassword" minlength="8" placeholder="Confirm Password" id="cpassword" required>
+			       <i class="fas fa-circle-check"></i>
+			       <i class="fas fa-circle-exclamation"></i>   
+			       <p></p>
+			        
+			    </div>
+			    
+			
+			<div class="checkbox">
+				<div class="checkbox-content">
+					<input type="checkbox" id="termcon"  required> </input>
+					<label  class="text" >I Accept Terms And Conditions </label>
+				</div>
+				
+			</div>
+
+			<div id="errorbox"></div><br>
+			
+			<button name="submit" type = "submit" class="button"> Register </button>
+			
+			<br><br>
+			<p1 class="dont1">Already Have Account 
+			<a href="login.html" class="have"> Login Here</a> </p1>
+
+			
+
+		    </form>
+	    </div>
+	</div>
+
+
+
+
+<br>
+ 	
+<br><br>
+<footer class="foot"> copyright &#169; My website OUR SHOP</footer>
+
+<!---------------------------------------------------nav
+	<nav class="menu">
+		<span>ONLINE-TECHY</span>
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="#">
+				About
+			</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">Privacy</a></li>
+		</ul> 
+	
+
+	<div class="hamburger">
+		<span class="line"></span>
+		<span class="line"></span>
+		<span class="line"></span>
+		
+
+
+	</div>
+
+	</nav>	--------------------------------------------------------->
+
+
+
+
+
+
+</body>
+
+
+</html>
+
